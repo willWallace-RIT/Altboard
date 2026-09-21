@@ -1,0 +1,10 @@
+[Unit]
+Description=Steam Overlay Keyboard State Daemon
+After=graphical.target
+
+[Service]
+ExecStart=/usr/local/bin/steam_kb_daemon.py
+Restart=always
+
+[Install]
+WantedBy=default.target
